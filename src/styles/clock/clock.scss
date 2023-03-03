@@ -1,0 +1,63 @@
+  body {
+     min-height: 100vh;
+     background: url(/src/img/img.jpg) no-repeat;
+     background-size: cover;
+     overflow-y: hidden;
+  }
+
+  #app {
+     display: flex;
+     justify-content: center;
+  }
+
+  .clock {
+     position: relative;
+     background: url(/src/img/21.jpg) -1.5px 0 no-repeat;
+     background-size: cover;
+     width: 500px;
+     height: 494px;
+     border-radius: 50%;
+
+
+     &::before {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        left: 49%;
+        top: 50%;
+        transform: translate(-40%, -50%);
+        background-color: rgba(57, 8, 8, 1);
+        z-index: 1;
+     }
+
+     &__arrow {
+        position: absolute;
+        left: 49%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 10px;
+        background: linear-gradient(0deg, rgba(71, 0, 0, 0) 50%, rgba(57, 8, 8, 1) 50%);
+        border-radius: 50%;
+        // transition: all cubic-bezier(0.45, 0.45, 0.45, 0.45) 1s;
+
+
+        &--second {
+           height: 82%;
+           width: 3px;
+           background: linear-gradient(0deg, rgba(71, 0, 0, 0) 50%, rgba(31, 80, 181, 1) 50%);
+        }
+
+        &--minute {
+           height: 82%;
+
+        }
+
+        &--hour {
+           height: 44%;
+
+        }
+     }
+
+  }
