@@ -3,4 +3,6 @@ import { Clock } from './src/js/Clock';
 
 const clock = new Clock();
 clock.init()
+// setTimeout(() => {
+// }, 1000)
 
