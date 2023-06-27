@@ -11,5 +11,8 @@ const noAttr = () => {
 
 export default defineConfig({
    plugins: [noAttr()],
-   base: ''
+   base: '',
+   build: {
+      outDir: 'docs'
+   }
 })
